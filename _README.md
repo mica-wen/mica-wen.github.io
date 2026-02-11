@@ -1,29 +1,77 @@
 # Mica Wen — Engineering Portfolio
 
-## Sample Site (for reference)
+## Your Portfolio URL
 
-**Sample URL**: <https://hisgarden.github.io/mica-portfolio/>
+**Your site**: <https://mica-wen.github.io/>
 
-This is a working sample of your portfolio. Use it as a reference for layout and content.
+**Your resume**: <https://mica-wen.github.io/MicaWen-Resume.pdf>
 
-## Your Target Portfolio URL
-
-**Your site**: <https://micawen.github.io/>
-
-**Your resume**: <https://micawen.github.io/MicaWen-Resume.pdf>
-
-Use `https://micawen.github.io/` as your portfolio link in all applications.
+Use `https://mica-wen.github.io/` as your portfolio link in all applications.
 
 ## How to Publish Your Own Site
 
-1. Create a GitHub account at <https://github.com/join>
-   - Use username: **micawen**
-   - Use email: **micawen.sf@gmail.com**
-2. Create a new repository named **micawen.github.io**
-   - Set it to **Public** (required for free GitHub Pages)
-3. Upload all files from this folder: `index.html`, `style.css`, `MicaWen-Resume.pdf`, and `images/`
-4. Go to **Settings** > **Pages** > Source: **Deploy from a branch** > Branch: **main** / **root** > **Save**
-5. Your site will be live at <https://micawen.github.io/> within a few minutes
+### Step 1: Create a GitHub Account
+
+1. Go to <https://github.com/join> in your browser
+2. Fill in the signup form:
+   - **Username**: `mica-wen`
+   - **Email**: `micawen.sf@gmail.com`
+   - Choose a strong password
+3. Complete the verification puzzle and click **Create account**
+4. Check your email for a verification link and click it
+
+### Step 2: Create the Repository
+
+1. Once logged in, click the **+** button in the top-right corner of GitHub, then click **New repository**
+2. Fill in the form exactly like this:
+   - **Repository name**: `mica-wen.github.io` (this exact name is required — it tells GitHub to host it as your website)
+   - **Description**: (optional) `Mica Wen's engineering portfolio`
+   - **Public**: make sure the **Public** radio button is selected (GitHub Pages requires this for free accounts)
+   - Do **NOT** check "Add a README file" — leave it unchecked
+   - Do **NOT** change the .gitignore or license dropdowns
+3. Click **Create repository**
+4. You'll land on a "Quick setup" page — keep this tab open, you'll need it in the next step
+
+### Step 3: Upload Your Portfolio Files
+
+1. On the "Quick setup" page, click the link that says **uploading an existing file** (it's in the middle of the page, in the sentence "…or upload an existing file")
+2. Open a Finder window and navigate to the `portfolio-site` folder
+3. Drag **all** of the following into the GitHub upload area:
+   - `index.html`
+   - `style.css`
+   - `MicaWen-Resume.pdf`
+   - The entire `images/` folder (drag the folder itself)
+   - The `.github/` folder (this contains the auto-deploy workflow — **important!**)
+     - Note: `.github` is a hidden folder. In Finder, press **Cmd + Shift + .** (period) to show hidden files, then drag it in
+4. Scroll down to the **"Commit changes"** section at the bottom:
+   - In the message box, type: `Initial portfolio upload`
+   - Make sure **"Commit directly to the main branch"** is selected
+5. Click **Commit changes**
+6. Wait for the upload to finish — it may take 30–60 seconds depending on image sizes
+
+### Step 4: Enable GitHub Pages
+
+The `.github/workflows/deploy.yml` file you uploaded will handle deployment automatically. But you need to enable it:
+
+1. In your repository, click the **Settings** tab (gear icon, top of the page)
+2. In the left sidebar, scroll down and click **Pages**
+3. Under **"Build and deployment"**, find the **Source** dropdown
+4. Change it from "Deploy from a branch" to **GitHub Actions**
+5. That's it — no other settings to change
+
+### Step 5: Verify Your Site Is Live
+
+1. Go to the **Actions** tab in your repository (top menu bar)
+2. You should see a workflow run called "Deploy to GitHub Pages" — wait for the green checkmark (1–2 minutes)
+3. Once it's green, visit <https://mica-wen.github.io/> in your browser
+4. You should see your portfolio! If not, wait another minute and refresh
+
+### Troubleshooting
+
+- **Site shows 404**: Make sure the repository name is exactly `mica-wen.github.io` (no typos, all lowercase). Also check that GitHub Pages source is set to "GitHub Actions" (not "Deploy from a branch").
+- **Images don't load**: Make sure the `images/` folder was uploaded and the filenames in `index.html` match exactly (including uppercase/lowercase).
+- **Old content showing**: GitHub Pages can take up to 5 minutes to update. Try a hard refresh in your browser (Cmd + Shift + R on Mac).
+- **Workflow failed (red X in Actions tab)**: Click on the failed run to see the error. Usually this means a file is missing or the `.github/workflows/deploy.yml` file wasn't uploaded.
 
 ---
 
@@ -66,7 +114,7 @@ The site auto-deploys in about 1 minute after each push.
 
 Apply using your Gmail: **micawen.sf@gmail.com**
 
-Portfolio link to paste: **https://micawen.github.io/**
+Portfolio link to paste: **https://mica-wen.github.io/**
 
 ---
 
