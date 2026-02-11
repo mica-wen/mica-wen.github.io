@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mica Wen — Engineering Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- ===== NAVIGATION ===== -->
+        <nav class="nav">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo">Mica Wen</a>
+                <button
+                    class="nav-toggle"
+                    aria-label="Toggle navigation"
+                    onclick="
+                        document
+                            .querySelector('.nav-links')
+                            .classList.toggle('open')
+                    "
+                >
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ===== HERO ===== -->
+        <header class="hero">
+            <h1>Mica Wen</h1>
+            <p class="subtitle">
+                Mechanical Engineering &middot; Northeastern University
+            </p>
+            <p class="intro">
+                Mechanical Engineering student with a minor in Mathematics.
+                Passionate about robotic and mechatronic system design &mdash;
+                from CAD to fabrication to testing. Experienced in ROS 2,
+                embedded systems, and hands-on prototyping through FIRST
+                Robotics, electric racing, and university research.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a
+                    href="https://www.linkedin.com/in/mica-wen/"
+                    class="btn btn-outline"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                >
+                <a href="mailto:micawen.sf@gmail.com" class="btn btn-outline"
+                    >Email Me</a
+                >
+            </div>
+        </header>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <!-- PROJECT 1: FTC ROBOTICS -->
+            <article class="project-card">
+                <div class="project-images">
+                    <!-- REPLACE: Add 3-4 photos of your FTC robot, competition, team, awards -->
+                    <div class="placeholder">
+                        Robot photo<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        Competition photo<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        Team / Award photo<br />(replace with your image)
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>FIRST Robotics &mdash; FTC Team #15385</h3>
+                    <p class="project-subtitle">
+                        Competition robot design, build, and competition
+                        &middot; The King's Academy (2020&ndash;2024)
+                    </p>
+
+                    <h4>Overview</h4>
+                    <p>
+                        Member of The King's Academy Robotics Team FTC #15385.
+                        Designed and built competition robots through full
+                        engineering cycles &mdash; from requirements and CAD
+                        design through fabrication, assembly, and competition
+                        across four seasons.
+                    </p>
+
+                    <h4>What I Did</h4>
+                    <ul>
+                        <!-- CUSTOMIZE: Replace these with your specific contributions -->
+                        <li>
+                            Designed and iterated on robot subsystems including
+                            [drivetrain / arm mechanism / intake / etc.] using
+                            Fusion 360
+                        </li>
+                        <li>
+                            Fabricated components through 3D printing, laser
+                            cutting, and manual assembly
+                        </li>
+                        <li>
+                            Tested mechanisms and iterated on designs based on
+                            performance during practice matches
+                        </li>
+                        <li>
+                            Contributed to the engineering notebook documenting
+                            the design process for judged awards
+                        </li>
+                    </ul>
+
+                    <h4>Results</h4>
+                    <div>
+                        <span class="award"
+                            >&#127942; Inspire Award &mdash; CenterStage
+                            (2024)</span
+                        >
+                        <span class="award"
+                            >&#127942; Collins Aerospace Innovate Award &mdash;
+                            Ultimate Goal (2021)</span
+                        >
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Fusion 360</span>
+                        <span class="tag">3D Printing</span>
+                        <span class="tag">Fabrication</span>
+                        <span class="tag">Competition Robotics</span>
+                        <!-- Add more tags as needed -->
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 2: NER MOTOR COOLING -->
+            <article class="project-card">
+                <div class="project-images">
+                    <!-- REPLACE: Add CAD renders of swirl pot + test setup photos -->
+                    <div class="placeholder">
+                        Swirl pot CAD render<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        Test setup photo<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        Thermal data / results<br />(replace with your image)
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Electric Motor Cooling System</h3>
+                    <p class="project-subtitle">
+                        Powertrain thermal management &middot; Northeastern
+                        Electric Racing (2025&ndash;Present)
+                    </p>
+
+                    <h4>Overview</h4>
+                    <p>
+                        Supporting powertrain thermal management for
+                        Northeastern Electric Racing's electric vehicle by
+                        designing and testing liquid cooling components for
+                        electric motors.
+                    </p>
+
+                    <h4>What I Did</h4>
+                    <ul>
+                        <li>
+                            Tested and validated liquid cooling systems for
+                            electric motors, including pumps, radiators, and
+                            coolant flow paths
+                        </li>
+                        <li>
+                            Conducted water heating and cooling experiments
+                            under varying thermal loads
+                        </li>
+                        <li>
+                            Analyzed radiator heat dissipation efficiency by
+                            measuring cooling rates to assess thermal
+                            effectiveness
+                        </li>
+                        <li>
+                            Applied thermodynamics and heat transfer principles
+                            to interpret test results and support design
+                            decisions
+                        </li>
+                        <li>
+                            Designed a swirl pot in CAD, optimizing it for
+                            coolant flow and air separation, and prepared the
+                            component for SLA 3D printing
+                        </li>
+                        <li>
+                            Collaborated with the powertrain team to integrate
+                            cooling components within overall vehicle packaging
+                            constraints
+                        </li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Fusion 360</span>
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">SLA 3D Printing</span>
+                        <span class="tag">Thermal Analysis</span>
+                        <span class="tag">Heat Transfer</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 3: DRONE RESEARCH -->
+            <article class="project-card">
+                <div class="project-images">
+                    <!-- REPLACE: Add photos of Jetson Nano rig, sandbox, COLMAP output -->
+                    <div class="placeholder">
+                        Jetson Nano + camera rig<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        Sandbox terrain setup<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        3D reconstruction output<br />(replace with your image)
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Computer Vision Drone Localization</h3>
+                    <p class="project-subtitle">
+                        Undergraduate research &middot; Prof. Rifat Sipahi,
+                        Northeastern University (2025&ndash;Present)
+                    </p>
+
+                    <h4>Overview</h4>
+                    <p>
+                        Developing a computer-vision-based drone localization
+                        pipeline using stereo cameras and image-based 3D terrain
+                        reconstruction to enable autonomous aerial navigation.
+                    </p>
+
+                    <h4>What I Did</h4>
+                    <ul>
+                        <li>
+                            Tested a computer-vision-based drone localization
+                            pipeline using a Jetson Nano with stereo cameras to
+                            simulate aerial image capture over a sandbox terrain
+                        </li>
+                        <li>
+                            Evaluated image-based 3D terrain reconstruction
+                            (COLMAP) by comparing reconstructed scenes with
+                            stereo imagery captured to simulate a drone
+                        </li>
+                        <li>
+                            Supported camera calibration and accuracy
+                            benchmarking using the OptiTrack motion capture
+                            system as ground truth
+                        </li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">ROS 2</span>
+                        <span class="tag">Jetson Nano</span>
+                        <span class="tag">COLMAP</span>
+                        <span class="tag">OptiTrack</span>
+                        <span class="tag">Stereo Vision</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 4: WALKER REDESIGN -->
+            <article class="project-card">
+                <div class="project-images">
+                    <!-- REPLACE: Add 1-2 CAD screenshots or photos -->
+                    <div class="placeholder">
+                        Walker CAD model<br />(replace with your image)
+                    </div>
+                    <div class="placeholder">
+                        Improved design<br />(replace with your image)
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Walker Redesign</h3>
+                    <p class="project-subtitle">
+                        Volunteer engineering project &middot; Walker Project
+                        (2023)
+                    </p>
+
+                    <h4>Overview</h4>
+                    <p>
+                        Co-led the redesign of a mobility walker for a client,
+                        taking the project from requirements gathering through
+                        CAD prototyping to an improved final design that
+                        enhanced mobility and accessibility.
+                    </p>
+
+                    <h4>What I Did</h4>
+                    <ul>
+                        <li>
+                            Conducted requirements and feasibility analysis with
+                            the client to understand mobility needs
+                        </li>
+                        <li>
+                            Developed CAD prototype enhancements to improve the
+                            walker's ergonomics and functionality
+                        </li>
+                        <li>
+                            Delivered a completed design that improved mobility
+                            and accessibility for the client
+                        </li>
+                    </ul>
+
+                    <div class="tags">
+                        <span class="tag">Fusion 360</span>
+                        <span class="tag">CAD Design</span>
+                        <span class="tag">Human-Centered Design</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===== SKILLS ===== -->
+        <section class="section" id="skills">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Design &amp; CAD</h3>
+                    <ul class="skill-list">
+                        <li>Fusion 360</li>
+                        <li>SolidWorks</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Robotics Software</h3>
+                    <ul class="skill-list">
+                        <li>ROS 2</li>
+                        <li>Gazebo</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Embedded Systems</h3>
+                    <ul class="skill-list">
+                        <li>Arduino</li>
+                        <li>Raspberry Pi</li>
+                        <li>Jetson Nano</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Fabrication &amp; Prototyping</h3>
+                    <ul class="skill-list">
+                        <li>CNC Machining</li>
+                        <li>SLA 3D Printing</li>
+                        <li>MIG &amp; TIG Welding</li>
+                        <li>Laser Cutting</li>
+                        <li>Waterjet Cutting</li>
+                        <li>PCB Milling</li>
+                        <li>Soldering</li>
+                        <li>Woodworking</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Certifications</h3>
+                    <ul class="skill-list">
+                        <li>Autodesk Fusion 360 (2023)</li>
+                        <li>Python PCAP (2024)</li>
+                        <li>Code Foundation for ROS (2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <!-- ===== RESUME ===== -->
+        <section class="section resume-section" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <p>
+                Download my resume for a full summary of my education,
+                experience, and skills.
+            </p>
+            <a
+                href="MicaWen-Resume.pdf"
+                class="btn-download"
+                target="_blank"
+                rel="noopener"
+            >
+                &#128196; Download Resume (PDF)
+            </a>
+        </section>
+
+        <!-- ===== FOOTER / CONTACT ===== -->
+        <footer class="footer" id="contact">
+            <h2>Get in Touch</h2>
+            <p>
+                Open to 6-month co-op/internship opportunities starting June
+                2026.
+            </p>
+            <div class="footer-links">
+                <a href="mailto:micawen.sf@gmail.com">micawen.sf@gmail.com</a>
+                <a href="mailto:wen.mic@northeastern.edu"
+                    >wen.mic@northeastern.edu</a
+                >
+                <a
+                    href="https://www.linkedin.com/in/mica-wen/"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                >
+            </div>
+            <div class="footer-bottom">&copy; 2026 Mica Wen</div>
+        </footer>
+    </body>
+</html>
