@@ -333,6 +333,18 @@ img {
     font-weight: 600;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.project-link:hover {
+    color: var(--color-accent-light);
+    border-color: var(--color-accent-light);
+}
+
 .award {
     display: inline-flex;
     align-items: center;
