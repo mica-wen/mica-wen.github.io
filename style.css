@@ -292,6 +292,12 @@ img {
     font-style: italic;
 }
 
+.project-body .project-mentor {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
 .project-body h4 {
     font-size: 0.85rem;
     font-weight: 700;
