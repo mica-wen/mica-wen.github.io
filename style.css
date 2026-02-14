@@ -257,8 +257,13 @@ img {
     grid-column: span 1;
 }
 
+.project-images:has(.grid-half) {
+    grid-template-columns: 1fr 1fr;
+}
+
 .project-images .grid-half {
-    grid-column: span 2;
+    grid-column: span 1;
+    height: 350px;
 }
 
 .project-images .placeholder {
