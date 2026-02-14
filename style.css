@@ -257,6 +257,10 @@ img {
     grid-column: span 1;
 }
 
+.project-images .grid-half {
+    grid-column: span 2;
+}
+
 .project-images .placeholder {
     aspect-ratio: 16/10;
     background: linear-gradient(135deg, #d0d5e0 0%, #e8ecf4 100%);
